@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
                         .load("http://i.imgur.com/Dvpvkl.png")
 
-                        .placeholder(R.drawable.flower) // can also be a drawable
+                        .placeholder(R.drawable.greece1) // can also be a drawable
 
                         .into(iv);
                 Toast.makeText(MainActivity.this, "Placeholder called ", Toast.LENGTH_SHORT).show();
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 Picasso
                         .with(getApplicationContext())
                         .load("http://i.imgur.com/DvpvklR.png")
-                        .placeholder(R.mipmap.ic_launcher) // can also be a drawable
+                        .placeholder(R.drawable.greece1) // can also be a drawable
                         .noFade()
                         .into(iv);
                 Toast.makeText(MainActivity.this, "Fade called ", Toast.LENGTH_SHORT).show();
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 Picasso.
                         with(getApplicationContext())
                         .load("http://i.imgur.com/Dvpvkl.png")
-                        .error(R.mipmap.ic_launcher) // will be displayed if the image cannot be loaded
+                        .error(R.drawable.greece1) // will be displayed if the image cannot be loaded
                         .into(iv);
 
                 Toast.makeText(MainActivity.this, "Error called ", Toast.LENGTH_SHORT).show();
